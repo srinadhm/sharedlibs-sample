@@ -1,4 +1,4 @@
-def call(String repoUrl, String branch = 'master') {
+def call(String repoUrl, String branch) {
     stage('Checkout Source Code') {
         checkout([
             $class: 'GitSCM',
